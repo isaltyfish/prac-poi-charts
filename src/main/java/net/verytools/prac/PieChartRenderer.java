@@ -46,9 +46,8 @@ public class PieChartRenderer {
         // 绘制
         chart.plot(data);
 
-//        try (FileOutputStream fileOut = new FileOutputStream("D:\\pie.docx")) {
-        try (FileOutputStream fileOut = new FileOutputStream("/tmp/pie.docx")) {
-            document.write(fileOut);
+        try (FileOutputStream fo = new FileOutputStream("D:\\pie.docx")) {
+            document.write(fo);
         }
     }
 

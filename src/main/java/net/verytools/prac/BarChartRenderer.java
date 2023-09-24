@@ -89,7 +89,7 @@ public class BarChartRenderer {
 
         XWPFDocument document = new XWPFDocument();
         new BarChartRenderer().render(document, chartData);
-        try (FileOutputStream fileOut = new FileOutputStream("D:\\verytools\\prac-poi-charts\\doc\\bar.docx")) {
+        try (FileOutputStream fileOut = new FileOutputStream("D:\\bar.docx")) {
             document.write(fileOut);
         }
     }
